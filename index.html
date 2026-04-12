@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href=""> <img src="Photoroom_20260403_161500.PNG" alt="" style="height: 50px;"></a>
+        </div>
+        <div class="top">
+            <nav class="navbar">
+                <ul>
+                <li><a href="index.html">ACCEUIL</a></li>
+                <li><a href="telephone.html">TELEPHONE</a></li>
+                <li><a href="ordinateurs.html">PC</a></li>
+                <li><a href="imprimants.html">IMPRIMANTES</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                </nav>
+                            <!-- BOUTON BURGER -->
+            <div class="burger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+          
+      
+        
+       <div class="hh"> <!-- FULL SCREEN MENU -->
+        <div class="full-menu" id="fullMenu">
+            <span  onclick="toggleMenu()" style="color: white; padding-bottom: 60px; font-weight: 700; font-size: 20px; cursor: pointer; text-align: start;">X</span>
+            <a href="index.html#home" onclick="toggleMenu()">ACCEUIL</a>
+            <a href="" onclick="toggleMenu()">TELEPHONE</a>
+            <a href="ordinateurs.html" onclick="toggleMenu()">PC</a>
+            <a href="imprimantes.html" onclick="toggleMenu()">IMPRIMANTES</a>
+            <a href="index.html#contact" onclick="toggleMenu()">CONTACT</a>
+        </div>
+        <div class="icones">
+            <a href="/panier" id="panier-icon">
+                <i class="ra ra-shopping-cart"></i>
+                <span id="panier-count">0</span>
+            </a>
+            
+            <button id="add-to-cart" style="font-size: 17px;">🛒</button>
+        
+        
+        </div>
+    </div>
+</div>
+
+        </div>
+    </header>
+    <div class="top1">
+        <h2>BIENVENUE CHEZ <br> PLETHO</h2>
+        <p>INNOVER, RÉPONDRE, SATISFAIRE — AU-DELÀ DE VOS ATTENTES!</p>
+        <div class="button">
+            <a href="" class="button1">CONTACT</a>
+            <a href="" class="button3">START BUY</a>
+        </div>
+    </div>
+    <main>
+
+        <h1 style="padding: 30px; text-align: start;"> NOS PRODUITS</h1>
+        <section class="exemplaires">
+
+            <!-- IMPRIMANTES -->
+            <div class="product-block">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+              <h2>IMPRIMANTES</h2> 
+              <a href="imprimantes.html" style="text-decoration: none; color: #007bf0;">VOIR TOUT</a>
+            </div>
+              <div class="splide imprimantes" role="group">
+                <div class="splide__track">
+                  <div class="splide__list">
+          
+                    <div class="splide__slide card">
+                      <img src="images/Photoroom_20260412_204533.PNG">
+                      <div class="card-body">
+                        <a class="btn" href="">VOIR</a>
+                        <p>IMPRIMANTE CANON</p>
+                        <p>80 000 FCFA</p>
+                      </div>
+                    </div>
+          
+                    <div class="splide__slide card">
+                      <img src="images/Photoroom_20260412_204516.PNG">
+                      <div class="card-body">
+                        <a class="btn" href="">VOIR</a>
+                        <p>IMPRIMANTE EPSON</p>
+                        <p>80 000 000 FCFA</p>
+                      </div>
+                    </div>
+          
+                    <div class="splide__slide card">
+                      <img src="images/Photoroom_20260412_204454.PNG">
+                      <div class="card-body">
+                        <a class="btn" href="">VOIR</a>
+                        <p>IMPRIMANTE XEROX</p>
+                        <p>80 000 FCFA</p>
+                      </div>
+                    </div>
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- ORDINATEURS -->
+            <div class="product-block">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h2>ORDINATEURS</h2> 
+                    <a href="ordinateurs.html" style="text-decoration: none; color: #007bf0;">VOIR TOUT</a>
+                    </div>
+              <div class="splide ordinateurs" role="group">
+                <div class="splide__track">
+                  <div class="splide__list">
+          
+                    <div class="splide__slide card">
+                      <img src="images/Photoroom_20260412_204344.PNG">
+                      <div class="card-body">
+                        <a class="btn" href="">VOIR</a>
+                        <p>ORDINATEUR HP</p>
+                        <p>280 000 FCFA</p>
+                      </div>
+                    </div>
+          
+                    <div class="splide__slide card">
+                      <img src="images/Photoroom_20260412_204433.PNG">
+                      <div class="card-body">
+                        <a class="btn" href="">VOIR</a>
+                        <p>ORDINATEUR HP</p>
+                        <p>400 000 FCFA</p>
+                      </div>
+                    </div>
+          
+                    <div class="splide__slide card">
+                      <img src="images/Photoroom_20260412_204411.PNG">
+                      <div class="card-body">
+                        <a class="btn" href="">VOIR</a>
+                        <p>ORDINATEUR DELL</p>
+                        <p>300 000 FCFA</p>
+                      </div>
+                    </div>
+          
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          
+          </section>
+
+          <div class="kk" style="display: flex;">
+            <div class="carré"></div>
+            <img src="images/Photoroom_20260412_184216.PNG" alt="">
+            
+            <div class="sss">
+                <h1>TRAVAILLER AVEC FLEXIBILITÉ</h1>
+                <h2>HP SPECTRE GEM CUT</h2>
+                <p>400 000 FCFA</p>
+
+                <div class="buton">
+                    <a href="" class="button6">VOIR</a>
+                    <a href="" class="button7">ACHETER</a>
+                </div>
+            </div>
+
+       
+        </div>
+
+             <h1 style="padding: 30px; text-align: start;"> NOS ACCESSOIRES</h1>
+    <div class="accessoires">
+
+
+        
+     
+        
+        <div class="exemple" data-aos="fade-left">
+        <img src="images/Souris .JPG">
+        <div class="button2">
+
+        <a href="">VOIR</a>
+        </div>
+        <p>SOURIS</p>
+        <p>50 000FCFA</p>
+        </div>
+        
+          <div class="exemple" data-aos="fade-left">
+        <img src="images/Types.JPG">
+        <div class="button2">
+   
+        <a href="">VOIR</a>
+        </div>
+        <p>CHARGEUR TYPE C</p>
+        <p>80 000 FCFA</p>
+        </div>
+        <div class="exemple" data-aos="fade-left">
+        <img src="images/Disque .JPG">
+        <div class="button2">
+
+        <a href="">VOIR</a>
+        </div>
+        <p>DISQUE DUR HDD</p>
+        <p>80 000 FCFA</p>
+        </div>
+        
+
+        
+
+        
+    
+        
+        <div class="exemple" data-aos="fade-left">
+        <img src="images/Charge.JPG">
+        <div class="button2">
+ 
+        <a href="">VOIR</a>
+        </div>
+        <p>POWER BANK</p>
+        <p>80 000 FCFA</p>
+        </div>
+        
+        <div class="exemple" data-aos="fade-left">
+        <img src="images/Clavier.JPG">
+        <div class="button2">
+
+        <a href="">VOIR</a>
+        </div>
+        <p>USB CLAVIER FILAIRE</p>
+        <p>80 000 FCFA</p>
+        </div>
+        
+        <div class="exemple" data-aos="fade-left">
+        <img src="images/Chargeurpc.JPG">
+        <div class="button2">
+
+        <a href="">VOIR</a>
+        </div>
+        <p>CHARGEUR PC</p>
+        <p>30 000 FCFA</p>
+        </div>
+        
+     
+        
+        
+        </div>
+
+
+        <div class="white" style="padding: 30px; text-align: start;">    <div class="nn">
+            <h1>DECOUVREZ NOS TOPS</h1>
+        </div>
+    <div class="info2" data-aos="fade-left">
+        <img src="images/Photoroom_20260412_201642.PNG" alt="" srcset="">
+        <div class="infoo">
+            <h2>HP Omnibook 7 14</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, et recusandae fugiat pariatur velit, deserunt amet accusamus nihil voluptatibus sint nisi placeat saepe iusto dolor tenetur, sit quia facilis distinctio.</p>
+            <div class="buttonn" data-aos="fade-right">
+                <a href="" id="add-to-cart" class="button4">VOIR</a>
+                <a href="" id="add-to-cart" class="button4">ACHETER</a>
+            </div>
+        </div>
+    </div>
+    </div>
+        
+    <div class="marques">
+        <a href=""> <img src="images/Dell1.JPG" alt="" srcset=""></a>
+        <a href=""> <img src="images/Epson.JPG" alt="" srcset=""></a>
+        <a href=""> <img src="images/Canon.JPG" alt="" srcset=""></a>
+        <a href=""> <img src="images/Acer.JPG" alt="" srcset=""></a>
+        <a href=""> <img src="images/Hp.JPG" alt="" srcset=""></a>
+        <a href=""><img src="images/Samsung.JPG" alt="" srcset=""></a>
+         </div>
+                <div class="forf">
+                <h1 style="padding-left: 30px; text-align: start;">SERVICE APRÈS VENTE ET MAINTENANCE</h1>
+                <p style="padding-left: 30px; text-align: start;">Bénificiez de notre service après vente et de nos differents forfait de maintenat!</p>
+                </div> 
+     
+           
+                
+                <div class="forfait" data-aos="fade-up">
+                
+                    <!-- FORFAIT MENSUEL -->
+                    <a href="maintenance.html" class="carte">
+                        <img src="images/H2.JPG" alt="">
+                
+                        <div class="cartetext">
+                            <h4>FORFAIT MENSUEL ⭐️</h4>
+                
+                            <ul>
+                                <li>✔ Jusqu’à 2 à 3 visites techniques par mois</li>
+                                <li>✔ Maintenance préventive des PC et imprimantes</li>
+                                <li>✔ Nettoyage logiciel et optimisation système</li>
+                                <li>✔ Assistance technique prioritaire</li>
+                                <li>✔ Diagnostic rapide en cas de panne</li>
+                            </ul>
+                
+                  
+                            <button id="add-to-cart">Choisir ce forfait</button>
+                        </div>
+                    </a>
+                
+                
+                    <!-- FORFAIT ANNUEL -->
+                    <a href="maintenance.html" class="carte">
+                        <img src="images/H1.PNG" alt="">
+                
+                        <div class="cartetext">
+                            <h4>FORFAIT ANNUEL ⭐️⭐️</h4>
+                
+                            <ul>
+                                <li>✔ Visites techniques régulières toute l’année</li>
+                                <li>✔ Maintenance complète PC & imprimantes</li>
+                                <li>✔ Installation et mise à jour des logiciels</li>
+                                <li>✔ Support technique prioritaire</li>
+                                <li>✔ Réduction sur réparations et pièces</li>
+                                <li>✔ Suivi continu du matériel</li>
+                            </ul>
+                
+                            <button id="add-to-cart">Choisir ce forfait</button>
+                        </div>
+                    </a>
+                
+                
+                    <!-- FORFAIT OCCASIONNEL -->
+                    <a href="maintenance.html" class="carte">
+                        <img src="images/H3.JPG" alt="">
+                
+                        <div class="cartetext">
+                            <h4>FORFAIT OCCASIONNEL ⭐️</h4>
+                
+                            <ul>
+                                <li>✔ Intervention ponctuelle sur demande</li>
+                                <li>✔ Diagnostic et dépannage rapide</li>
+                                <li>✔ Installation d’imprimantes ou logiciels</li>
+                                <li>✔ Nettoyage et optimisation système</li>
+                                <li>✔ Conseils techniques personnalisés</li>
+                            </ul>
+                
+                    
+                            <button id="add-to-cart">Choisir ce forfait</button>
+                        </div>
+                    </a>
+                
+        
+                
+                </div>
+
+                <section class="about" id="ABOUT">
+                    <h1 style="padding-top: 80px; text-align: center;">A PROPOS DE NOUS</h1>
+                
+                
+                    <div class="about-columns">
+                        <div class="col">
+                         
+                    <p>
+                        <strong>PLETHO</strong> tire son nom d’un terme biblique signifiant 
+                        « rempli » ou « combler ». Notre mission est donc simple : 
+                        combler les besoins technologiques de nos clients en offrant 
+                        des solutions fiables et accessibles.
+                    </p>
+                
+                    <p>
+                        Créée en <strong>2025</strong>, PLETHO est spécialisée dans la 
+                        vente d’équipements informatiques et technologiques, notamment 
+                        les ordinateurs et les imprimantes, qu’ils soient neufs ou de seconde main.
+                    </p>
+                
+                    <p>
+                        Nous accompagnons aussi bien les particuliers que les entreprises 
+                        avec des services adaptés : conseil, installation, maintenance 
+                        et service après-vente pour garantir la performance et la durabilité 
+                        de vos équipements.
+                    </p>
+                       
+                        </div>
+                
+                      
+                    </div>
+                </section>
+                <div class="contact" id="contact">
+                    <h1>CONTACT</h1>
+                    <p>Vous souhaitez nous contacter pour plus d'infos ou pour quoi que soit ?</p>
+                
+                    <div class="form">
+                   <label for="Name">Nom :</label>
+                   <input type="text" id="Name" placeholder="Veuillez faire rentrer votre nom">
+                
+                   <label for="Prenom">Prénom :</label>
+                   <input type="text" id="Prenom" placeholder="Votre Prénom">
+                
+                   <label for="Email">E-mail</label>
+                   <input type="email" id="Email" placeholder="Votre Email">
+                
+                   <label for="Message"></label>
+                   <textarea name="Message" id="Message" rows="6" placeholder="Votre message"></textarea>
+                
+                <button type="submit">Envoyer</button>
+                    </div>
+                </div>
+                <section class="faq">
+
+                    <h2 style="padding: 10px; text-align: start;">QUESTIONS FRÉQUENTES</h2>
+                
+                    <!-- Question 1 -->
+                    <div class="faq-item"  data-aos="fade-up">
+                        <button class="faq-question">
+                            Les produits sont-ils neufs ou de seconde main ?
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Chaque produit possède une fiche détaillée indiquant clairement s’il est neuf ou de seconde main. Une section dédiée aux produits de seconde main sera également disponible.</p>
+                        </div>
+                    </div>
+                
+                    <!-- Question 2 -->
+                    <div class="faq-item"  data-aos="fade-up">
+                        <button class="faq-question">
+                            Comment se passent les livraisons ?
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>La livraison est aux frais du client et s’effectue dans un délai maximum de 3 jours selon la localisation.</p>
+                        </div>
+                    </div>
+                
+                    <!-- Question 3 -->
+                    <div class="faq-item"  data-aos="fade-up">
+                        <button class="faq-question">
+                            Vendez-vous en gros ou seulement en détail ?
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nous proposons la vente en gros pour les entreprises et organisations, ainsi que la vente en détail pour les particuliers.</p>
+                        </div>
+                    </div>
+                
+                    <!-- Question 4 -->
+                    <div class="faq-item"  data-aos="fade-up">
+                        <button class="faq-question">
+                            Proposez-vous un service après-vente ?
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui, nous offrons un service après-vente incluant diagnostic, réparation et assistance technique.</p>
+                        </div>
+                    </div>
+                
+                    <!-- Question 5 -->
+                    <div class="faq-item"  data-aos="fade-up">
+                        <button class="faq-question">
+                            Les produits sont-ils garantis ?
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Certains produits disposent d’une garantie. Les détails sont précisés sur chaque fiche produit.</p>
+                        </div>
+                    </div>
+                
+                    <!-- Question 6 -->
+                    <div class="faq-item"  data-aos="fade-up">
+                        <button class="faq-question">
+                            Quels moyens de paiement acceptez-vous ?
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nous acceptons les paiements mobiles, les espèces et autres moyens selon disponibilité.</p>
+                        </div>
+                    </div>
+                
+                    <!-- Question 7 -->
+                    <div class="faq-item"  data-aos="fade-up">
+                        <button class="faq-question">
+                            Peut-on réserver un produit ?
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui, la réservation est possible pendant une durée limitée selon la disponibilité du produit.</p>
+                        </div>
+                    </div>
+                
+                    <!-- Question 8 -->
+                    <div class="faq-item"  data-aos="fade-up">
+                        <button class="faq-question">
+                            Vendez-vous aussi des imprimantes et accessoires ?
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui, nous proposons des imprimantes, accessoires informatiques et divers périphériques.</p>
+                        </div>
+                    </div>
+                
+                    <!-- Question 9 -->
+                    <div class="faq-item"  data-aos="fade-up">
+                        <button class="faq-question">
+                            Peut-on voir les produits avant achat ?
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui, vous pouvez nous contacter pour vérifier la disponibilité et organiser une présentation.</p>
+                        </div>
+                    </div>
+                
+                    <!-- Question 10 -->
+                    <div class="faq-item"  data-aos="fade-up">
+                        <button class="faq-question">
+                            Les appareils sont-ils testés avant la vente ?
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui, tous nos appareils sont testés et vérifiés avant la vente afin de garantir leur bon fonctionnement.</p>
+                        </div>
+                    </div>
+                
+                </section>
+                  
+    </main>
+    <footer>
+
+        <div class="foot">
+            <div class="PLETHO">
+                <h3>PLETHO.</h3>
+            </div>
+            <div class="others">
+        <ul>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">SERVICE APRÉS VENTE</a></li>
+            <li><a href="">ORDINATEURS</a></li>
+            <li><a href="Imprimantes"></a></li>
+        </ul>
+            </div>
+        
+            <div class="RS">
+                <i> <a href="" class="fa-brands fa-instagram"></a></i>
+                <i> <a href="" class="fa-brands fa-whatsapp"></a></i>
+            </div>
+        
+        </div>
+        <hr>
+           <p style="text-align: center;"> &copy; All rights reserved! Hilarion Vitin.</p>
+        </footer>
+ <script src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>AOS.init({
+    duration: 1700,
+  once: true,
+  offset: 80,
+
+});
+
+</script>
+</body>
+</html>

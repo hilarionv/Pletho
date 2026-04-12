@@ -1,0 +1,1051 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+ scroll-behavior: smooth;
+}
+
+.exemplaires{
+
+    flex-direction:column;
+    gap:70px;
+    align-items:center;
+    margin-top: 100px;
+max-width: 100%;
+    margin: auto;
+    background-color: #fafafa;
+    padding: 30px;
+    color: black;
+    border-radius: 10px;
+}
+
+
+
+.exemple{
+    padding:10px;
+    text-align:start;
+    border-radius:20px;
+    position:relative;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.exemple img{
+    height:300px;
+    border-radius:3px;
+    cursor:pointer;
+    display:block;
+    transition:0.4s;
+
+}
+
+
+
+.exemple:hover img{
+    filter:brightness(40%);
+}
+.accessoires .exemple:hover img{
+    filter:brightness(40%);
+}
+
+.accessoires {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ✅ FLEXIBLE */
+    gap: 30px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+/* OVERLAY */
+
+.button2 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transform: translate(-5%, -5%);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+}
+.button2 h2{
+    color:white;
+    margin:0;
+    opacity:0;
+    transition:0.3s;
+}
+
+.button2 a{
+    text-decoration:none;
+    padding:8px 11px;
+    color:white;
+background-color: #007bff;
+  border-radius: 10px;
+    transition:0.3s;
+    font-size:11px;
+}
+
+.exemple:hover .button2 a,
+.exemple:hover .button2 h2{
+    opacity:1;
+}
+
+
+
+  .product-block {
+    margin-bottom: 50px;
+  }
+  
+  .product-block h2 {
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    width: 100%;
+    background: whitesmoke;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    color: black;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 380px;   /* 🔥 important */
+    object-fit: cover; /* empêche image déformée */
+  }
+  
+  .card-body {
+padding-top: 10px;
+font-weight: 600;
+font-size: 13px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+.accessoires img{
+    height:330px;
+    border-radius:3px;
+    cursor:pointer;
+    display:block;
+    transition:0.4s;
+}
+
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    padding-bottom: 100px;
+    padding-top: 60px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form input {
+    width: 100%;
+    max-width: 890px;
+    padding: 6px;
+}
+
+.form button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    font-size: 13px;
+}
+
+.marques {
+    background-color: #212121;
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.marques img {
+    height: 43px;
+    border-radius: 4px;
+}
+
+.faq {
+    width: 88%;
+    margin: auto;
+    align-items: center;
+}
+
+.faq h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+ font-size: 17px;
+ font-family: "Montserrat", sans-serif;
+    background: white;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.faq-answer p {
+    padding: 10px;
+}
+
+.faq-question.active .arrow {
+    transform: rotate(180deg);
+    transition: 0.3s;
+
+    font-size: 17px;
+}
+.forfait {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 25px;
+    margin-top: 60px;
+    background-color: #fafafa;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.forfait a {
+    text-decoration: none;
+    color: black;
+}
+
+.info2 {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.info2 img {
+    height: 500px;
+ 
+}
+
+.buttonn {
+    display: flex;
+    gap: 20px;
+    margin-top: 80px;
+}
+
+/* ===== FIX FORFAITS ===== */
+
+.carte {
+    padding: 0;
+    border-radius: 7px;
+    border: 1px solid black;
+    overflow: hidden;
+    width: 390px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.carte img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.cartetext {
+    padding: 20px;
+
+ 
+}
+
+.cartetext h4 {
+    margin-top: 0;
+}
+
+.carte ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.carte li {
+    margin-bottom: 10px;
+}
+
+.carte button {
+    width: 32%;
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+    border-radius: 3px;
+    padding: 7px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+.forf {
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+
+
+.about { background-color: white; min-height: 500px; }
+        .about-columns { max-width: 889px; margin: 40px auto 0; flex-wrap: wrap; }
+        .about-columns .col { flex: 1; min-width: 250px; text-align: justify; }
+        .about-columns p { line-height: 1.6; }
+
+ 
+
+      
+
+
+
+.nn {
+    text-align: center;
+    padding-top: 30px;
+  
+
+}
+
+.white {
+    background-color: #fafafa;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+.button4 {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    height: 100px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    background-color: #007bff;
+    align-items: center;
+}
+
+
+.full-menu {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    z-index: 9999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.full-menu a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* burger */
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin-right: 20px;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.navbar ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+.logo a{
+    text-decoration:none;
+    color:black;
+}
+
+/* Style du lien panier */
+#panier-icon {
+    position: relative;       /* pour positionner le badge */
+    display: inline-block;
+    font-size: 20px;          /* taille de l'icône */
+    color: black;              /* couleur de base */
+    text-decoration: none;
+}
+
+/* Badge compteur */
+#panier-count {
+    position: absolute;
+    top: -8px;                /* au-dessus de l'icône */
+    right: -10px;             /* à droite de l'icône */
+    background: black;          /* couleur du badge */
+    color: white;
+    font-size: 8px;
+    font-weight: bold;
+    border-radius: 50%;       /* rond */
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    transition: transform 0.2s; /* effet animation rapide */
+}
+
+/* Animation lorsque le compteur change */
+#panier-count.animate {
+    transform: scale(1.4);     /* badge “saute” */
+}
+
+.top1 {
+    padding: 30px;
+    text-align: start;
+    min-height: 550px;
+    background-image: url(images/Untitled1.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top1 h2 {
+  font-size: 70px;
+}
+
+.top1 p {
+    font-size: 23px;
+    
+  }
+
+.button {
+  display: flex;
+  gap: 20px;
+  margin-top: 150px;
+}
+.button1 {
+    background-color: #007bff;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.button3 {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid #007bff;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.kk {
+    background-color: #fafafa;
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-image: url(images/Ffff.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.kk img {
+
+ height: 550px;
+ width: 600px;
+
+}
+
+.kk h1 {
+font-size: 55px;
+   
+   }
+
+.buton {
+display: flex;
+gap: 20px;
+margin-top: 150px;
+
+}
+.button6 {
+padding: 10px;
+background-color: #007bff;
+font-weight: 500;
+border-radius: 10px;
+text-decoration: none;
+color: black;
+}
+
+.button7 {
+    padding: 10px;
+    background-color: transparent;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-decoration: none;
+color: black;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1025px) {
+
+   
+
+
+  
+    
+    /* PRODUITS */
+
+    /* FORFAITS */
+    .forfait {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .carte {
+        width: calc(50% - 20px);
+    }
+    
+    
+    
+    /* FORMULAIRE */
+    .form input {
+        padding: 6px;
+        width: 700px;
+    }
+    
+    /* ABOUT */
+    .about {
+        height: auto;
+        padding: 20px;
+    }
+    
+    /* INFO2 */
+ 
+    .info2 img {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .exemplaires{
+        display:flex;
+        flex-direction:column;
+        gap:70px;
+        align-items:center;
+        margin-top: 100px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .accessoires {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);/* 👈 largeur FIXE */
+        gap: 30px;
+    
+        justify-content: center; /* 🔥 centre le GRID */
+        margin-top: 100px;
+       left: 50%;
+       right: 50%;
+    }
+
+    .exemple img{
+        height:200px;
+        border-radius:3px;
+        cursor:pointer;
+        display:block;
+        transition:0.4s;
+    
+    }
+
+    .card img {
+        width: 100%;
+        height: 290px;   /* 🔥 important */
+        object-fit: cover; /* empêche image déformée */
+      }
+    }
+
+ 
+ 
+    @media screen and (max-width: 913px) {
+
+   
+
+
+  
+    
+        /* PRODUITS */
+    
+        /* FORFAITS */
+        .forfait {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .carte {
+            width: calc(50% - 20px);
+        }
+        
+        
+        
+        /* FORMULAIRE */
+        .form input {
+            padding: 6px;
+            width: 600px;
+        }
+        
+        /* ABOUT */
+        .about {
+            height: auto;
+            padding: 20px;
+        }
+        
+        /* INFO2 */
+     
+        .info2 img {
+            height: 350px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .exemplaires{
+            display:flex;
+            flex-direction:column;
+            gap:70px;
+            align-items:center;
+            margin-top: 100px;
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+    
+        .accessoires {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);/* 👈 largeur FIXE */
+            gap: 30px;
+        
+            justify-content: center; /* 🔥 centre le GRID */
+            margin-top: 100px;
+           left: 50%;
+           right: 50%;
+        }
+    
+        .exemple img{
+            height:140px;
+            border-radius:3px;
+            cursor:pointer;
+            display:block;
+            transition:0.4s;
+        
+        }
+    
+        .card img {
+            width: 100%;
+            height: 240px;   /* 🔥 important */
+            object-fit: cover; /* empêche image déformée */
+          }
+
+          .kk img {
+
+            height: 530px;
+            width: 570px;
+           
+           }
+           
+           .kk h1 {
+           font-size: 45px;
+              
+              }
+        }
+
+
+        @media screen and (max-width: 778px) {
+
+   
+
+
+  
+    
+            /* PRODUITS */
+        
+            /* FORFAITS */
+            .forfait {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .carte {
+                width: calc(50% - 20px);
+            }
+            
+            
+            
+            /* FORMULAIRE */
+            .form input {
+                padding: 6px;
+                width: 600px;
+            }
+            
+            /* ABOUT */
+            .about {
+                height: auto;
+                padding: 20px;
+            }
+            
+            /* INFO2 */
+         
+            .info2 img {
+                height: 350px;
+                width: 100%;
+                object-fit: cover;
+            }
+            
+            .exemplaires{
+                display:flex;
+                flex-direction:column;
+                gap:70px;
+                align-items:center;
+                margin-top: 100px;
+                padding-left: 70px;
+                padding-right: 70px;
+            }
+        
+            .accessoires {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);/* 👈 largeur FIXE */
+                gap: 30px;
+            
+                justify-content: center; /* 🔥 centre le GRID */
+                margin-top: 100px;
+               left: 50%;
+               right: 50%;
+            }
+        
+            .exemple img{
+                height:140px;
+                border-radius:3px;
+                cursor:pointer;
+                display:block;
+                transition:0.4s;
+            
+            }
+        
+            .card img {
+                width: 100%;
+                height: 460px;   /* 🔥 important */
+                object-fit: cover; /* empêche image déformée */
+              }
+    
+              .kk img {
+    
+                height: 430px;
+                width: 470px;
+               
+               }
+               
+               .kk h1 {
+               font-size: 35px;
+                  
+                  }
+            }     
+    
+
+            html, body {
+                overflow-x: hidden;
+                max-width: 100%;
+            }
+            
+      
+/* ===== 600px ===== */
+@media screen and (max-width: 600px) {
+
+    .forfait {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .carte {
+        width: 100%;
+    }
+
+    .form input {
+        padding: 6px;
+        width: 100%;
+        max-width: 490px;
+    }
+
+    .about {
+        height: auto;
+        padding: 20px;
+    }
+
+    .info2 img {
+        height: 280px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .exemplaires {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        margin-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .accessoires {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 60px;
+    }
+
+    .exemple img {
+        height: 120px;
+    }
+
+    .card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .kk img {
+        height: 300px;
+        width: 100%;
+    }
+
+    .kk h1 {
+        font-size: 28px;
+    }
+
+    .top1 h2 {
+        font-size: 38px;
+    }
+
+    .top1 p {
+        font-size: 16px;
+    }
+
+    .marques {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .marques img {
+        height: 35px;
+       }
+}
+
+/* ===== 480px ===== */
+@media screen and (max-width: 480px) {
+
+    .forfait {
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .carte {
+        width: 100%;
+    }
+
+    .form input {
+        padding: 6px;
+        width: 100%;
+        max-width: 390px;
+    }
+
+    .about {
+        height: auto;
+        padding: 15px;
+    }
+
+    .info2 img {
+        height: 230px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .exemplaires {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        margin-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .accessoires {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    .exemple img {
+        height: 120px;
+    }
+
+    .card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .kk img {
+        height: 240px;
+        width: 100%;
+    }
+
+    .kk h1 {
+        font-size: 24px;
+    }
+
+    .top1 h2 {
+        font-size: 30px;
+    }
+
+    .top1 p {
+        font-size: 14px;
+    }
+
+    .marques {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+    .marques img {
+     height: 25px;
+    }
+
+    .button {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 80px;
+    }
+
+    .buton {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 80px;
+    }
+}
+
+
+/* ===== 600px ===== */
+@media screen and (max-width: 600px) {
+
+    /* ... tout ton code précédent ... */
+
+    .burger {
+        display: flex;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .full-menu {
+        display: none; /* géré par JS au clic */
+    }
+
+    .full-menu.open {
+        display: flex;
+    }
+}
+
+/* ===== 480px ===== */
+@media screen and (max-width: 480px) {
+
+    /* ... tout ton code précédent ... */
+
+    .burger {
+        display: flex;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .full-menu {
+        display: none;
+    }
+
+    .full-menu.open {
+        display: flex;
+    }
+}
