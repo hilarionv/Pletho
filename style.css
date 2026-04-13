@@ -421,6 +421,8 @@ justify-content: center;
     gap:20px;
 }
 
+
+
 .logo a{
     text-decoration:none;
     color:black;
@@ -672,6 +674,8 @@ border-radius: 20px;
     border-radius: 100% 0% 78% 22% / 35% 100% 0% 65% ;
     background-color: #007bff;
 }
+
+
 
 
 
@@ -1254,7 +1258,7 @@ flex-wrap: wrap;
     }
 
     .buton {
-        flex-direction: column;
+     font-size: 13px;
         gap: 10px;
         margin-top: 30px;
     }
@@ -1299,7 +1303,7 @@ flex-wrap: wrap;
 
 
     .buton {
-        flex-direction: column;
+
         gap: 12px;
         margin-top: 40px;
     }
@@ -1533,7 +1537,8 @@ flex-wrap: wrap;
     }
 
     .buton {
-        flex-direction: column;
+     font-size: 13px;
+     display: flex;
         gap: 12px;
         margin-top: 50px;
     }
