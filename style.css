@@ -389,7 +389,7 @@ justify-content: center;
     display: none;
     position: fixed;
     inset: 0;
-    background-color: black;
+    background-color: white;
     z-index: 9999;
     flex-direction: column;
     justify-content: center;
@@ -398,7 +398,7 @@ justify-content: center;
 }
 
 .full-menu a {
-    color: white;
+    color: black;
     font-size: 24px;
     text-decoration: none;
     font-weight: 600;
@@ -717,6 +717,7 @@ border-radius: 20px;
         cursor:pointer;
         display:block;
         transition:0.4s;
+        padding-left: 35px;
     
     }
 
@@ -725,6 +726,12 @@ border-radius: 20px;
         height: 290px;   /* 🔥 important */
         object-fit: cover; /* empêche image déformée */
       }
+
+
+.info2 img {
+    height: 350px;
+ 
+}
     }
 
  
@@ -999,6 +1006,44 @@ border-radius: 20px;
     box-sizing: border-box;
 }
 
+
+.brand{
+    padding:40px 60px;
+    }
+    
+    .products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    }
+    
+    .product-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+    }
+    
+    .product-card:hover{
+    transform:translateY(-6px);
+    }
+    
+    .product-image{
+    height:250px;
+    text-align:center;
+    }
+    
+    .product-image img{
+    height:100%;
+    }
+    
+    .price{
+    display:block;
+    font-weight:bold;
+    font-size:20px;
+    margin:10px 0;
+    }
 /* ===== MOBILE 600px ===== */
 
 
@@ -1072,6 +1117,10 @@ border-radius: 20px;
         width: 100%;
         box-sizing: border-box;
     }
+
+    .forfait {
+  font-size: 12px;
+    }
     
 
    
@@ -1114,7 +1163,7 @@ border-radius: 20px;
 
 
     .top1 h2 {
-        font-size: 38px;
+        font-size: 50px;
     }
 
     .top1 p {
@@ -1208,6 +1257,10 @@ border-radius: 20px;
         height: 220px;
         cursor: pointer; /* 🔹 pour montrer que c’est cliquable */
     }
+
+    .forfait {
+        font-size: 12px;
+          }
 
  
 
@@ -1351,6 +1404,7 @@ border-radius: 20px;
         cursor: pointer;
         display: block;
         transition: 0.4s;
+        padding-left: 22px;
     }
     
     .exemple {
@@ -1413,6 +1467,7 @@ border-radius: 20px;
         cursor: pointer;
         display: block;
         transition: 0.4s;
+        padding-left: 14px;
     }
     
     .exemple {
@@ -1458,4 +1513,32 @@ border-radius: 20px;
         box-sizing: border-box;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
