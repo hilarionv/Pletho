@@ -8,11 +8,184 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <div class="logo">
+            <a href=""> <img src="Photoroom_20260403_161500.PNG" alt="" style="height: 50px;"></a>
+        </div>
+        <div class="top">
+            <nav class="navbar">
+                <ul>
+                <li><a href="index.html">ACCEUIL</a></li>
+                <li><a href="telephone.html">TELEPHONE</a></li>
+                <li><a href="ordinateurs.html">PC</a></li>
+                <li><a href="imprimantes.html">IMPRIMANTES</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                </nav>
+                            <!-- BOUTON BURGER -->
+            <div class="burger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+          
+      
+        
+       <div class="hh"> <!-- FULL SCREEN MENU -->
+        <div class="full-menu" id="fullMenu">
+            <span  onclick="toggleMenu()" style="color: white; padding-bottom: 60px; font-weight: 700; font-size: 20px; cursor: pointer; text-align: start;">X</span>
+            <a href="index.html#home" onclick="toggleMenu()">ACCEUIL</a>
+            <a href="" onclick="toggleMenu()">TELEPHONE</a>
+            <a href="ordinateurs.html" onclick="toggleMenu()">PC</a>
+            <a href="imprimantes.html" onclick="toggleMenu()">IMPRIMANTES</a>
+            <a href="index.html#contact" onclick="toggleMenu()">CONTACT</a>
+        </div>
+        <div class="icones">
+            <a href="/panier" id="panier-icon">
+                <i class="ra ra-shopping-cart"></i>
+                <span id="panier-count">0</span>
+            </a>
+            
+            <button id="add-to-cart" style="font-size: 17px;">🛒</button>
+        
+        
+        </div>
+    </div>
+</div>
+
+        </div>
+    </header>
+    <div class="top1">
+        <h2>NOS SERVICES</h2>
+        <p>QUE PEUT-ON FAIRE POUR VOUS ?</p>
+        <div class="button">
+            <a href="" class="button1">CONTACTEZ-NOUS</a>
+        </div>
+    </div>
+    <main>
+        <h1 style="text-align: center; padding:100px;;">PLETHO SERVICES</h1>
+                <div class="servicess">
+                    
+                  
+        
+                <!-- INSTALLATION -->
+              
+                    <div class="reparation" data-aos="fade-left">
+                        <div class="text">
+                            <h1>INSTALLATION</h1>
+                            <p>Nous installons vos appareils avec soin, configuration complète et mise à jour du logiciel.</p>
+                            <span>📱</span> <span>✉️</span>
+                        </div>
+                     
+                       <div class="cc"> <img src="images/IMG_2865.JPG" alt="Réparation"> </div>
+                    </div>
+            
+        
+                <!-- RÉPARATION -->
+              
+                <div class="reparation" data-aos="fade-left">
+                        <div class="text">
+                            <h1>RÉPARATION</h1>
+                            <p>Dépannage rapide et fiable : remplacement écran, batterie, ou réparation logicielle.</p>
+                            <span>📱</span> <span>✉️</span>
+                        </div>
+                       
+                        <img src="images/IMG_2864.JPG" alt="Installation">
+                    </div>
+             
+        
+                <!-- MARCHÉ -->
+               
+                <div class="reparation" data-aos="fade-left">
+                        <div class="text">
+                            <h1>MARCHÉ</h1>
+                            <p>Vente d’appareils neufs et reconditionnés, avec conseils personnalisés et garantie. <br>
+                                Rubrique spéciale pour les entreprises
+                            </p>
+                           
+                            <span>📱</span> <span>✉️</span>
+                        </div>
+                        <img src="images/IMG_2866.JPG" alt="Marché">
+                    </div>
+              
+        
+                <!-- MAINTENANCE -->
+               
+                <div class="reparation" data-aos="fade-left">
+                        <div class="text">
+                            <h1>MAINTENANCE</h1>
+                            <p>Entretien régulier et optimisation des appareils pour prolonger leur durée de vie.</p>
+                            <span>📱</span> <span>✉️</span>
+                        </div>
+                        <img src="images/H1.PNG" alt="Maintenance">
+                    </div>
+                      
+                 
+        
+        
+               
+        
+            </div>
+        
+            <div class="contact" id="contact" style="margin: 20px; background-color: #fafafa; border-radius: 10px;">
+                <h2>CONTACT</h2>
+                <p>Vous souhaitez nous contacter pour plus d'infos ou pour quoi que soit ?</p>
+            
+                <div class="form">
+               <label for="Name">Nom :</label>
+               <input type="text" id="Name" placeholder="Veuillez faire rentrer votre nom">
+            
+               <label for="Prenom">Prénom :</label>
+               <input type="text" id="Prenom" placeholder="Votre Prénom">
+            
+               <label for="Email">E-mail</label>
+               <input type="email" id="Email" placeholder="Votre Email">
+            
+               <label for="Message"></label>
+               <textarea name="Message" id="Message" rows="6" placeholder="Votre message"></textarea>
+            
+            <button type="submit" style="background-color: #007bff;">Envoyer</button>
+                </div>
+            </div>
+        
+            </main>
+            <footer>
+
+                <div class="foot">
+                    <div class="PLETHO">
+                        <h3>PLETHO.</h3>
+                    </div>
+                    <div class="others">
+                <ul>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">SERVICE APRÉS VENTE</a></li>
+                    <li><a href="">ORDINATEURS</a></li>
+                    <li><a href="Imprimantes"></a></li>
+                </ul>
+                    </div>
+                
+                    <div class="RS">
+                        <i> <a href="" class="fa-brands fa-instagram"></a></i>
+                        <i> <a href="" class="fa-brands fa-whatsapp"></a></i>
+                    </div>
+                
+                </div>
+                <hr>
+                   <p style="text-align: center;"> &copy; All rights reserved! Hilarion Vitin.</p>
+                </footer>
  <script src="script.js"></script>
+
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>AOS.init({
+    duration: 1700,
+  once: true,
+  offset: 80,
+
+});
+</script>
 </body>
 </html>
