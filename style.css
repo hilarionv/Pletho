@@ -1064,17 +1064,22 @@ border-radius: 20px;
     padding: 40px 20px;
 }
 
-/* CONTAINER PRODUITS */
-.products {
+/* TITRE */
+.brand h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* SPLIDE CONTAINER */
+.splide {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* SLIDE */
+.splide__slide {
     display: flex;
-flex-wrap: wrap;
-    gap: 25px;
-    max-width: 1000px;
-    margin: 0 auto; /* centre proprement */
     justify-content: center;
-    background-color: #fafafa;
-    border-radius: 10px;
-    padding: 30px;
 }
 
 /* CARD PRODUIT */
@@ -1084,34 +1089,37 @@ flex-wrap: wrap;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
-    width: 280px; /* important pour alignement */
+
+    width: 260px; /* légèrement réduit pour slider */
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
 }
 
 /* HOVER */
 .product-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.15);
 }
 
 /* IMAGE */
-.product-image {
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.product-card img {
+    height: 180px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
-.product-image img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-   padding-left: 40px;
- 
+/* TITRE PRODUIT */
+.product-card h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* DESCRIPTION */
+.product-card p {
+    font-size: 13px;
+    color: #555;
 }
 
 /* PRIX */
@@ -1119,11 +1127,10 @@ flex-wrap: wrap;
     font-weight: bold;
     font-size: 18px;
     margin: 10px 0;
-    text-align: start;
 }
 
 /* BOUTON */
-.products button {
+.add-cart {
     background-color: #007bff;
     color: white;
     padding: 10px 15px;
@@ -1133,9 +1140,11 @@ flex-wrap: wrap;
     font-size: 13px;
     cursor: pointer;
     transition: 0.3s;
+    width: 100%;
 }
 
-.products button:hover {
+/* HOVER BOUTON */
+.add-cart:hover {
     background-color: #0056b3;
 }
 /* ===== MOBILE 600px ===== */
