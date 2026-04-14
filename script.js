@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // SPLIDE
   new Splide(".imprimantes", {
       perPage: 3,
-      gap: "20px",
+      gap: "30px",
       breakpoints: {
           768: { perPage: 1 }
       }
