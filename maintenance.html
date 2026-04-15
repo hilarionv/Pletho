@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href=""> <img src="images/Photoroom_20260403_161500.PNG" alt="" style="height: 75px;"></a>
+        </div>
+        <div class="top">
+            <nav class="navbar">
+                <ul>
+                <li><a href="index.html">ACCEUIL</a></li>
+                <li><a href="telephone.html">TELEPHONE</a></li>
+                <li><a href="ordinateurs.html">PC</a></li>
+                <li><a href="imprimantes.html">IMPRIMANTES</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                </nav>
+                            <!-- BOUTON BURGER -->
+            <div class="burger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+          
+      
+        
+       <div class="hh"> <!-- FULL SCREEN MENU -->
+        <div class="full-menu" id="fullMenu">
+            <span  onclick="toggleMenu()" style="color: white; padding-bottom: 60px; font-weight: 700; font-size: 20px; cursor: pointer; text-align: start;">X</span>
+            <a href="index.html#home" onclick="toggleMenu()">ACCEUIL</a>
+            <a href="" onclick="toggleMenu()">TELEPHONE</a>
+            <a href="ordinateurs.html" onclick="toggleMenu()">ORDINATEURS</a>
+            <a href="imprimantes.html" onclick="toggleMenu()">IMPRIMANTES</a>
+            <a href="services.html" onclick="toggleMenu()">SERVICES</a>
+            <a href="index.html#contact" onclick="toggleMenu()">CONTACT</a>
+        </div>
+        <div class="icones">
+            <a href="/panier" id="panier-icon">
+                <i class="ra ra-shopping-cart"></i>
+                <span id="panier-count">0</span>
+            </a>
+            
+            <button id="add-to-cart" style="font-size: 17px;">🛒</button>
+        
+        
+        </div>
+    </div>
+</div>
+
+        </div>
+    </header>
+    <div class="top2 servi">
+        <h2>MAINTENANCE PLETHO</h2>
+        <p>TROUVER LE FORFAIT QUI VOUS CONVIENT!</p>
+        <div class="button">
+            <a href="" class="button1">CONTACTEZ-NOUS</a>
+        </div>
+    </div>
+    <main>
+    <div class="forfait" data-aos="fade-up">
+                
+        <!-- FORFAIT MENSUEL -->
+        <a href="maintenance.html" class="carte">
+            <img src="images/H2.JPG" alt="">
+    
+            <div class="cartetext">
+                <h4>FORFAIT MENSUEL ⭐️</h4>
+    
+                <ul>
+                    <li>✔ Jusqu’à 2 à 3 visites techniques par mois</li>
+                    <li>✔ Maintenance préventive des PC et imprimantes</li>
+                    <li>✔ Nettoyage logiciel et optimisation système</li>
+                    <li>✔ Assistance technique prioritaire</li>
+                    <li>✔ Diagnostic rapide en cas de panne</li>
+                </ul>
+    
+      
+                <button id="add-to-cart">Choisir ce forfait</button>
+            </div>
+        </a>
+    
+    
+        <!-- FORFAIT ANNUEL -->
+        <a href="maintenance.html" class="carte">
+            <img src="images/H1.PNG" alt="">
+    
+            <div class="cartetext">
+                <h4>FORFAIT ANNUEL ⭐️⭐️</h4>
+    
+                <ul>
+                    <li>✔ Visites techniques régulières toute l’année</li>
+                    <li>✔ Maintenance complète PC & imprimantes</li>
+                    <li>✔ Installation et mise à jour des logiciels</li>
+                    <li>✔ Support technique prioritaire</li>
+                    <li>✔ Réduction sur réparations et pièces</li>
+                    <li>✔ Suivi continu du matériel</li>
+                </ul>
+    
+                <button id="add-to-cart">Choisir ce forfait</button>
+            </div>
+        </a>
+    
+    
+        <!-- FORFAIT OCCASIONNEL -->
+        <a href="maintenance.html" class="carte">
+            <img src="images/H3.JPG" alt="">
+    
+            <div class="cartetext">
+                <h4>FORFAIT OCCASIONNEL ⭐️</h4>
+    
+                <ul>
+                    <li>✔ Intervention ponctuelle sur demande</li>
+                    <li>✔ Diagnostic et dépannage rapide</li>
+                    <li>✔ Installation d’imprimantes ou logiciels</li>
+                    <li>✔ Nettoyage et optimisation système</li>
+                    <li>✔ Conseils techniques personnalisés</li>
+                </ul>
+    
+        
+                <button id="add-to-cart">Choisir ce forfait</button>
+            </div>
+        </a>
+    
+
+    
+    </div>
+</main>
+    <footer>
+
+        <div class="foot">
+            <div class="PLETHO">
+                <h3>PLETHO.</h3>
+            </div>
+            <div class="others">
+        <ul>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">SERVICE APRÉS VENTE</a></li>
+            <li><a href="">ORDINATEURS</a></li>
+            <li><a href="Imprimantes"></a></li>
+        </ul>
+            </div>
+        
+            <div class="RS">
+                <i> <a href="" class="fa-brands fa-instagram"></a></i>
+                <i> <a href="" class="fa-brands fa-whatsapp"></a></i>
+            </div>
+        
+        </div>
+        <hr>
+           <p style="text-align: center;"> &copy; All rights reserved! Hilarion Vitin.</p>
+        </footer>
+ <script src="script.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>AOS.init({
+    duration: 1700,
+  once: true,
+  offset: 80,
+
+});
+</script>
+
+<!-- Splide JS -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  document.querySelectorAll('.splide').forEach(slider => {
+    new Splide(slider, {
+      perPage: 3,
+      gap: '20px',
+      arrows: true,
+      pagination: false,
+
+      breakpoints: {
+        1024: { perPage: 2 },
+        600: { perPage: 1 }
+      }
+    }).mount();
+  });
+
+});
+</script>
+</body>
+</html>
