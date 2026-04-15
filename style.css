@@ -1013,6 +1013,13 @@ border-radius: 20px;
             max-width: 430px;
              
             }
+
+
+.ssss {
+    display: flex;
+ 
+flex-direction: column;
+}
             
             .exemplaires{
                 display:flex;
@@ -1199,6 +1206,16 @@ buttooon {
 .add-cart:hover {
     background-color: #0056b3;
 }
+
+.ssss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ssss img {
+    min-height: 400px;
+}
 /* ===== MOBILE 600px ===== */
 
 
@@ -1214,6 +1231,12 @@ buttooon {
         flex-wrap: wrap;
         gap: 20px;
     }
+
+
+.ssss {
+    display: flex;
+    flex-direction: column;
+}
 
     .carte {
         width: 100%;
@@ -1468,6 +1491,10 @@ buttooon {
        }
 
 
+       .ssss {
+        display: flex;
+        flex-direction: column;
+    }
     .servicess {
         align-items: center;
         gap: 30px;
