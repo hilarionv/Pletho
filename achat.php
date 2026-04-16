@@ -86,10 +86,10 @@ $produit = $result->fetch_assoc();
     <main>
         <div class="ssss">
             <div class="image-produit">
-            <img src="<?= $produit['image'] ?>" style="width:300px;">
+            <img src="<?= $produit['image'] ?>" style="width:400px;">
             </div>
     
-            <div class="textt" style="text-align: start; padding-top: 50px;">
+            <div class="textt" style="text-align: start; padding-top: 50px; flex: 1">
                 <div class="details">
                     <h1><?= $produit['nom'] ?></h1>
                     <h3><?= $produit['prix'] ?> FCFA</h3>
