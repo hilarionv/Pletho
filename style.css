@@ -35,8 +35,9 @@ main {
 }
 
 .hhz {
- padding: 30px;
+ padding-left: 30px;
  text-align: start;
+ margin-top: 15px;
 }
 
 
@@ -122,7 +123,7 @@ background-color: #007bff;
   
   .card {
    max-width: 330px;
-    background: whitesmoke;
+    background: white;
     border-radius: 10px;
     overflow: hidden;
     padding: 10px;
@@ -133,24 +134,30 @@ background-color: #007bff;
   .card img {
     width: 100%;
     height: 250px;   /* 🔥 important */
-    object-fit: cover; /* empêche image déformée */
+    object-fit: cover;
+    background-color: whitesmoke; /* empêche image déformée */
   }
   
+  .card {
+    display: flex; /* ajoute juste ça */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+
   .card-body {
 padding-top: 10px;
 font-weight: 600;
 font-size: 13px;
   }
   
-  .btn {
-    display: inline-block;
-    background: #007bff;
-    color: white;
-    padding: 8px 12px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-  }
+
 .accessoires img{
     height:330px;
     border-radius:3px;
@@ -233,6 +240,7 @@ font-size: 13px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    text-align: start;
 }
 
 .faq-answer {
@@ -247,6 +255,7 @@ font-size: 13px;
 
 .faq-answer p {
     padding: 10px;
+    text-align: start;
 }
 
 .faq-question.active .arrow {
@@ -254,6 +263,18 @@ font-size: 13px;
     transition: 0.3s;
 
     font-size: 17px;
+}
+
+.arrow {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+   color: #0056b3;
+   background-color: #007bff;
+   font-size: 14px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 .forfait {
     display: flex;
@@ -589,11 +610,11 @@ footer {
 }
 
 .kk {
-    background-color: #fafafa;
+    background-color: white;
     padding: 30px;
     margin-top: 60px;
     margin-bottom: 60px;
-    background-image: url(images/Ffff.png);
+ 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -725,9 +746,7 @@ border-radius: 20px;
 
   
   /* Hover effect */
-  .card:hover img {
-    transform: scale(1.1);
-  }
+
 
 
 
@@ -855,7 +874,7 @@ border-radius: 20px;
 
         .card {
             max-width: 350px;
-             background: whitesmoke;
+             background: white;
              border-radius: 10px;
              overflow: hidden;
              padding: 10px;
@@ -1226,6 +1245,15 @@ buttooon {
     margin: 10px 0;
 }
 
+.blue {
+color: #007bff;
+font-size: 13px;
+text-transform: uppercase;
+padding-left: 30px;
+margin-bottom: 0;
+font-weight: 600;
+}
+
 /* BOUTON */
 .add-cart {
     background-color: #007bff;
@@ -1253,9 +1281,29 @@ buttooon {
     width: 100%;
 }
 
+.card-body a {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 11px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
 /* HOVER BOUTON */
 .add-cart:hover {
     background-color: #0056b3;
+}
+
+.prix {
+    color: #007bff;
+   
 }
 
 .product-card .btn:hover {
@@ -1405,7 +1453,7 @@ buttooon {
     .kk {
         flex-direction: column;  /* 🔥 empile image et texte */
         padding: 20px;
-        background-image: url(images/Untitled-7.PNG);
+        
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1655,12 +1703,7 @@ buttooon {
         box-sizing: border-box;
     }
 
-    .kk { background-image: url(images/Untitled-7.PNG);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}  
-    
+
 
   
 
@@ -1891,11 +1934,8 @@ buttooon {
     .form button {
         width: 100%;
         box-sizing: border-box;
+   
     }
-}
-
-
-
 
 
 
