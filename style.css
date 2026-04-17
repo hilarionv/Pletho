@@ -233,7 +233,7 @@ font-size: 13px;
 .faq-question {
     width: 100%;
     padding: 15px;
- font-size: 17px;
+ font-size: 16px;
  font-family: "Montserrat", sans-serif;
     background: white;
     border: none;
@@ -270,7 +270,7 @@ font-size: 13px;
     width: 20px;
     border-radius: 100%;
    color: #0056b3;
-   background-color: #007bff;
+   background-color: #93C5FD;
    font-size: 14px;
    display: flex;
    justify-content: center;
@@ -315,7 +315,7 @@ justify-content: center;
 .carte {
     padding: 0;
     border-radius: 7px;
-    border: 1px solid black;
+    border: 1px solid #eee;
     overflow: hidden;
     width: 390px;
 
@@ -348,16 +348,22 @@ justify-content: center;
 
 .carte li {
     margin-bottom: 10px;
+    color: black;
+    font-weight: 300;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    font-size: 12px;
+
 }
 
 .carte button {
-    width: 32%;
+    width: 100%;
     background-color: #007bff;
     color: white;
     border: 1px solid #007bff;
     border-radius: 3px;
     padding: 7px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 
@@ -373,9 +379,9 @@ justify-content: center;
 
 
 
-.about { background-color: white; min-height: 500px; }
+.about { background-color: white; min-height: 500px;}
         .about-columns { max-width: 889px; margin: 40px auto 0; flex-wrap: wrap; }
-        .about-columns .col { flex: 1; min-width: 250px; text-align: justify; }
+        .about-columns .col { flex: 1; min-width: 250px; text-align: justify; color: #555; font-weight: 400; }
         .about-columns p { line-height: 1.6; }
 
  
@@ -397,9 +403,15 @@ justify-content: center;
     border-radius: 10px;
 
 }
+
+.about h1,
+.about .blue{
+    text-align: center;
+}
+
 .button4 {
     text-decoration: none;
-    padding: 10px;
+    padding: 7px;
     background-color: #007bff;
     color: white;
     font-weight: 500;
@@ -434,6 +446,9 @@ justify-content: center;
     font-size: 30px;
     text-decoration: none;
     font-weight: 600;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 7px;
+    
 }
 
 /* burger */
@@ -442,9 +457,11 @@ justify-content: center;
 
 .navbar ul li a{
     text-decoration:none;
-    color:white;
+    color:black;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
+    padding: 4px;
+    
 }
 
 .navbar ul{
@@ -467,6 +484,7 @@ justify-content: center;
     font-size: 20px;          /* taille de l'icône */
     color: black;              /* couleur de base */
     text-decoration: none;
+  
 }
 
 footer {
@@ -479,6 +497,8 @@ footer {
     padding-right: 10px;
     padding-left: 10px;
     margin-top: 70px;
+    background-color: #101010;
+    color: white;
     }
     
     .foot {
@@ -493,7 +513,7 @@ footer {
     }
     .others ul li a {
         text-decoration: none;
-        color: black;
+        color: white;
         font-size: 15px;
     }
     
@@ -504,7 +524,7 @@ footer {
     .RS  a {
         font-size: 25px;
         text-decoration: none;
-        color: black;
+        color: white;
     }
 
 /* Badge compteur */
@@ -569,6 +589,8 @@ footer {
     background-size: cover;  
 }
 
+
+
 .top1 h2 {
   font-size: 70px;
 }
@@ -586,7 +608,10 @@ footer {
     font-size: 23px;
     
   }
-
+  .contact h1,
+  .contact .blue{
+      text-align: center;
+  }
 .button {
   display: flex;
   gap: 20px;
@@ -746,9 +771,42 @@ border-radius: 20px;
 
   
   /* Hover effect */
+  .right-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
 
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 15px;
+    background-color: white;
+}
 
+.icones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    order:2; /* colle à gauche */
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black; /* blanc sur fond bleu */
+    margin: 0;
+}
 
 
 
@@ -959,8 +1017,8 @@ border-radius: 20px;
 
           .kk img {
 
-            height: 500px;
-            width: 440px;
+            height: 0px;
+            width: 0px;
            
            }
            
@@ -1116,8 +1174,8 @@ flex-direction: column;
     
               .kk img {
     
-                height: 430px;
-                width: 470px;
+                height: 0px;
+                width: 0px;
                
                }
                
@@ -1125,6 +1183,28 @@ flex-direction: column;
                font-size: 35px;
                   
                   }
+
+                    
+
+    .navbar ul {
+        display: none;
+    }
+
+    .full-menu {
+        display: none;
+    }
+
+    .full-menu.open {
+        display: flex;
+    }
+    .navbar ul {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        order: 3;
+    }
             }     
     
 
@@ -1133,31 +1213,12 @@ flex-direction: column;
                 max-width: 100%;
             }
 
+            
+
 
 
             /* ===== HEADER STRUCTURE ===== */
-.top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 15px;
-    background-color: #007bff;
-}
 
-.burger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
-    order: -1; /* colle à gauche */
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: white; /* blanc sur fond bleu */
-    margin: 0;
-}
 
 /* ===== ACCESSOIRES CENTRÉ ===== */
 .accessoires {
@@ -1333,6 +1394,15 @@ font-weight: 600;
         gap: 20px;
     }
 
+    .blue {
+        color: #007bff;
+        font-size: 13px;
+        text-transform: uppercase;
+        padding-left: 10px;
+        margin-bottom: 0;
+        font-weight: 600;
+        }
+
 
 .ssss {
     display: flex;
@@ -1356,6 +1426,19 @@ font-weight: 600;
      
     }
 
+    .faq-question {
+        width: 100%;
+        padding: 15px;
+     font-size: 14px;
+     font-family: "Montserrat", sans-serif;
+        background: white;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        text-align: start;
+    }
+
     
  
 
@@ -1370,6 +1453,11 @@ font-weight: 600;
         height: 220px;
         cursor: pointer; /* 🔹 pour montrer que c’est cliquable */
     }
+
+    .about h1,
+.about .blue{
+    text-align: start;
+}
 
     .about {
         height: auto;
@@ -1437,6 +1525,11 @@ font-weight: 600;
 
 }
 
+.info2 img {
+    height: 400px;
+ 
+}
+
     .forfait {
   font-size: 12px;
     }
@@ -1460,8 +1553,8 @@ font-weight: 600;
     }
 
     .kk img {
-        width: 100%;
-        height: auto;  /* 🔥 plus de hauteur fixe */
+        width: 0px;
+        height: 0;  /* 🔥 plus de hauteur fixe */
     }
 
     .kk h1 {
@@ -1483,6 +1576,11 @@ font-weight: 600;
         width: 100%;
         padding: 15px 0;
     }
+
+    .contact h1,
+.contact .blue{
+    text-align: start;
+}
 
 
     .top1 h2 {
@@ -1547,6 +1645,10 @@ font-weight: 600;
         object-fit: cover;
     }
        
+
+    .info2 {
+   flex-direction: column;
+        }
 }
 
 /* ===== 480px ===== */
@@ -1559,6 +1661,20 @@ font-weight: 600;
         margin-right: 10px;
     }
 
+    .info2 {
+        flex-direction: column;
+             }
+
+    .blue {
+        color: #007bff;
+        font-size: 13px;
+        text-transform: uppercase;
+        padding-left: 10px;
+        margin-bottom: 0;
+        font-weight: 600;
+        }
+        
+
     .kk {
         flex-direction: column;
         padding: 15px;
@@ -1567,12 +1683,25 @@ font-weight: 600;
     .carte img {
         width: 100%;
         height: 200px;
-        object-fit: cover;
+       
+       
+        .faq-question {
+            width: 100%;
+            padding: 15px;
+         font-size: 14px;
+         font-family: "Montserrat", sans-serif;
+            background: white;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            text-align: start;
+        } object-fit: cover;
     }
 
     .kk img {
-        width: 100%;
-        height: auto;
+        width: 0px;
+        height: 0;
     }
 
     .kk h1 {
@@ -1620,6 +1749,22 @@ font-weight: 600;
         background-repeat: no-repeat;
         background-size: cover;  
     }
+
+    .about h1,
+.about .blue{
+    text-align: start;
+}
+
+
+.contact h1,
+.contact .blue{
+    text-align: start;
+}
+
+.info2 img {
+    height: 380px;
+ 
+}
 
     .product-block h2 {
         font-size: 18px;
@@ -1805,7 +1950,7 @@ font-weight: 600;
 
     .burger {
         display: flex;
-        order: -1;
+        order: 3;
     }
 
     .accessoires {
@@ -1867,7 +2012,7 @@ font-weight: 600;
 
     .burger {
         display: flex;
-        order: -1;
+        order: 3;
     }
 
     .accessoires {
@@ -1936,6 +2081,8 @@ font-weight: 600;
         box-sizing: border-box;
    
     }
+
+}
 
 
 

@@ -14,51 +14,50 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href=""> <img src="images/Photoroom_20260403_161500.PNG" alt="" style="height: 75px;"></a>
-        </div>
+  
         <div class="top">
+            <div class="logo">
+                <a href=""><img src="images/Photoroom_20260403_161500.PNG" alt="" style="height: 75px;"></a>
+            </div>
+        
             <nav class="navbar">
                 <ul>
-                <li><a href="index.html">ACCEUIL</a></li>
-                <li><a href="telephone.html">TELEPHONE</a></li>
-                <li><a href="ordinateurs.html">PC</a></li>
-                <li><a href="imprimantes.html">IMPRIMANTES</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="index.html">ACCEUIL</a></li>
+                    <li><a href="telephone.html">TELEPHONE</a></li>
+                    <li><a href="ordinateurs.html">PC</a></li>
+                    <li><a href="imprimantes.html">IMPRIMANTES</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
-                </nav>
-                            <!-- BOUTON BURGER -->
-            <div class="burger" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
+            </nav>
+        
+            <!-- PANIER + BURGER groupés ensemble -->
+            <div class="right-controls">
+                <div class="icones">
+                    <a href="/panier" id="panier-icon">
+                        <i class="ra ra-shopping-cart"></i>
+                        <span id="panier-count">0</span>
+                    </a>
+                    <button id="add-to-cart" style="font-size: 17px;">🛒</button>
+                </div>
+                <div class="burger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
-          
-      
         
-       <div class="hh"> <!-- FULL SCREEN MENU -->
-        <div class="full-menu" id="fullMenu">
-            <span  onclick="toggleMenu()" style="color: white; padding-bottom: 60px; font-weight: 700; font-size: 20px; cursor: pointer; text-align: start;">X</span>
-            <a href="index.html#home" onclick="toggleMenu()">ACCEUIL</a>
-            <a href="" onclick="toggleMenu()">TELEPHONE</a>
-            <a href="ordinateurs.html" onclick="toggleMenu()">ORDINATEURS</a>
-            <a href="imprimantes.html" onclick="toggleMenu()">IMPRIMANTES</a>
-            <a href="services.html" onclick="toggleMenu()">SERVICES</a>
-            <a href="index.html#contact" onclick="toggleMenu()">CONTACT</a>
+            <div class="full-menu" id="fullMenu">
+                <span onclick="toggleMenu()" style="color: white; padding-bottom: 60px; font-weight: 700; font-size: 20px; cursor: pointer;">X</span>
+                <a href="index.html#home" onclick="toggleMenu()">ACCEUIL</a>
+                <a href="" onclick="toggleMenu()">TELEPHONE</a>
+                <a href="ordinateurs.html" onclick="toggleMenu()">ORDINATEURS</a>
+                <a href="imprimantes.html" onclick="toggleMenu()">IMPRIMANTES</a>
+                <a href="services.html" onclick="toggleMenu()">SERVICES</a>
+                <a href="index.html#contact" onclick="toggleMenu()">CONTACT</a>
+            </div>
         </div>
-        <div class="icones">
-            <a href="/panier" id="panier-icon">
-                <i class="ra ra-shopping-cart"></i>
-                <span id="panier-count">0</span>
-            </a>
-            
-            <button id="add-to-cart" style="font-size: 17px;">🛒</button>
         
-        
-        </div>
-    </div>
-</div>
 
         </div>
     </header>

@@ -15,56 +15,56 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href=""> <img src="images/Photoroom_20260403_161500.PNG" alt="" style="height: 75px;"></a>
-        </div>
+  
         <div class="top">
+            <div class="logo">
+                <a href=""><img src="images/Photoroom_20260403_161500.PNG" alt="" style="height: 75px;"></a>
+            </div>
+        
             <nav class="navbar">
                 <ul>
-                <li><a href="index.html">ACCEUIL</a></li>
-                <li><a href="telephone.html">TELEPHONE</a></li>
-                <li><a href="ordinateurs.html">PC</a></li>
-                <li><a href="imprimantes.html">IMPRIMANTES</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="index.html">ACCEUIL</a></li>
+                    <li><a href="telephone.html">TELEPHONE</a></li>
+                    <li><a href="ordinateurs.html">PC</a></li>
+                    <li><a href="imprimantes.html">IMPRIMANTES</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
-                </nav>
-                            <!-- BOUTON BURGER -->
-            <div class="burger" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
+            </nav>
+        
+            <!-- PANIER + BURGER groupés ensemble -->
+            <div class="right-controls">
+                <div class="icones">
+                    <a href="/panier" id="panier-icon">
+                        <i class="ra ra-shopping-cart"></i>
+                        <span id="panier-count">0</span>
+                    </a>
+                    <button id="add-to-cart" style="font-size: 17px;">🛒</button>
+                </div>
+                <div class="burger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
-          
-      
         
-       <div class="hh"> <!-- FULL SCREEN MENU -->
-        <div class="full-menu" id="fullMenu">
-            <span  onclick="toggleMenu()" style="color: white; padding-bottom: 60px; font-weight: 700; font-size: 20px; cursor: pointer; text-align: start;">X</span>
-            <a href="index.html#home" onclick="toggleMenu()">ACCEUIL</a>
-            <a href="" onclick="toggleMenu()">TELEPHONE</a>
-            <a href="ordinateurs.html" onclick="toggleMenu()">ORDINATEURS</a>
-            <a href="imprimantes.html" onclick="toggleMenu()">IMPRIMANTES</a>
-            <a href="services.html" onclick="toggleMenu()">SERVICES</a>
-            <a href="index.html#contact" onclick="toggleMenu()">CONTACT</a>
+            <div class="full-menu" id="fullMenu">
+                <span onclick="toggleMenu()" style="color: white; padding-bottom: 60px; font-weight: 700; font-size: 20px; cursor: pointer;">X</span>
+                <a href="index.html#home" onclick="toggleMenu()">ACCEUIL</a>
+                <a href="" onclick="toggleMenu()">TELEPHONE</a>
+                <a href="ordinateurs.html" onclick="toggleMenu()">ORDINATEURS</a>
+                <a href="imprimantes.html" onclick="toggleMenu()">IMPRIMANTES</a>
+                <a href="services.html" onclick="toggleMenu()">SERVICES</a>
+                <a href="index.html#contact" onclick="toggleMenu()">CONTACT</a>
+            </div>
         </div>
-        <div class="icones">
-            <a href="/panier" id="panier-icon">
-                <i class="ra ra-shopping-cart"></i>
-                <span id="panier-count">0</span>
-            </a>
-            
-            <button id="add-to-cart" style="font-size: 17px;">🛒</button>
         
         
-        </div>
-    </div>
-</div>
 
         </div>
     </header>
     <div class="top1">
-        <h2>BIENVENUE CHEZ <br> <span>PLETHO</span></h2>
+        <h2>BIENVENUE CHEZ <br> <span style="color: #007bf0;">PLETHO</span></h2>
         <p>INNOVER, RÉPONDRE, SATISFAIRE<br>AU-DELÀ DE VOS ATTENTES!</p>
         <div class="button">
             <a href="" class="button1">CONTACT</a>
@@ -86,8 +86,8 @@
               <a href="imprimantes.html" style="text-decoration: none; color: #007bf0; font-size: 11px;">VOIR TOUT →</a>
             </div>
               <div class="splide imprimantes" role="group">
-                <div class="splide__track">
-                  <div class="splide__list">
+                <div class="splide__track" style="padding: 10px;">
+                  <div class="splide__list" style="padding: 5px;">
           
                     <div class="splide__slide card">
                       <img src="images/Photoroom_20260412_204533.PNG">
@@ -136,8 +136,8 @@
                     <a href="ordinateurs.html" style="text-decoration: none; color: #007bf0; font-size: 11px;">VOIR TOUT →</a>
                     </div>
               <div class="splide ordinateurs" role="group">
-                <div class="splide__track">
-                  <div class="splide__list">
+                <div class="splide__track" style="padding: 10px;">
+                  <div class="splide__list" style="padding: 5px;">
           
                     <div class="splide__slide card">
                       <img src="images/Photoroom_20260412_204344.PNG">
@@ -188,14 +188,14 @@
             
             <div class="sss">
 
-                <p style="padding: 10px; font-size: 12px; background-color: #007bf0; color: blue; display: inline-block; border-radius: 10px;">PRODUIT EN VEDETTE ⭐️</p>
+                <p style="padding: 10px; font-size: 12px; background-color: #93C5FD; color: #007bf0; display: inline-block; border-radius: 10px;">PRODUIT EN VEDETTE ⭐️</p>
                 <h1>TRAVAILLER AVEC FLEXIBILITÉ</h1>
                 <h2>HP SPECTRE GEM CUT</h2>
                 <p class="prix" style="font-weight: 600; font-size: 25px;">400 000 FCFA</p>
                 <p style="font-weight: 300; color: grey; padding-top: 25px;">Design premium, performances exceptionnelles. Le compagnon idéal pour les professionnels qui n'acceptent aucun compromis.</p>
 
                 <div class="buton">
-                    <a href="achat.html" class="button6">VOIR LE PRODUIT</a>
+                    <a href="achat.html" class="button6" style="color: white;">VOIR LE PRODUIT</a>
                     <a href="" class="button7">ACHETER</a>
                 </div>
             </div>
@@ -293,15 +293,16 @@
         </div>
 
 
-        <div class="white" style="padding: 30px; text-align: start;">    <div class="nn">
-            <h1>DECOUVREZ NOS TOPS</h1>
-        </div>
+        <div class="white" style="padding: 30px; text-align: start;">  
+      
+       
     <div class="info2" data-aos="fade-left">
         <img src="images/Photoroom_20260412_201642.PNG" alt="" srcset="">
         <div class="infoo">
+            <p style="padding: 10px; font-size: 12px; background-color: #93C5FD; color: #007bf0; display: inline-block; border-radius: 10px;">TOP EN VENTE 🔥</p>
             <h2>HP Omnibook 7 14</h2>
             <p class="prix">400 000 FCFA</p>
-<p>g elit. Voluptate ea arcdi id blanditiis nihil vero totam?</p>
+<p>Ultra-léger et puissant, le HP Omnibook 7 14 est conçu pour les professionnels qui veulent aller plus loin. Parfait pour le bureau comme en déplacement</p>
 
             <div class="buttonn" data-aos="fade-right">
                 <a href="achat.html" id="add-to-cart" class="button4">VOIR</a>
@@ -322,9 +323,9 @@
 
 
                 <div class="forf">
-                    <p class="blue" style="text-align: start;">Service après-vente et maintenance</p>
+                    <p class="blue" style="text-align: start;">Service après-vente</p>
                     <h1 class="hhz">SERVICE & MAINTENANCE</h1>
-                <p style="padding-left: 30px; text-align: start;" class="hhz">Bénificiez de notre service après vente et de nos differents forfait de maintenat!</p>
+                <p style="padding-left: 30px; text-align: start;">Bénificiez de notre service après vente et de nos differents forfait de maintenat!</p>
                 </div> 
      
            
@@ -336,7 +337,8 @@
                         <img src="images/H2.JPG" alt="">
                 
                         <div class="cartetext">
-                            <h4>FORFAIT MENSUEL ⭐️</h4>
+                            <p style="padding: 8px; background-color: #93C5FD; color: #007bf0; border-radius: 10px; font-size: 10px; display: inline-block;"> FORFAIT MENSUEL ⭐️</p>
+                            <h4>FORFAIT MENSUEL</h4>
                 
                             <ul>
                                 <li>✔ Jusqu’à 2 à 3 visites techniques par mois</li>
@@ -357,7 +359,8 @@
                         <img src="images/H1.PNG" alt="">
                 
                         <div class="cartetext">
-                            <h4>FORFAIT ANNUEL ⭐️⭐️</h4>
+                            <p style="padding: 8px; background-color: #93C5FD; color: #007bf0; border-radius: 10px; font-size: 10px; display: inline-block;"> FORFAIT ANNUEL ⭐️⭐️</p>
+                            <h4>FORFAIT ANNUEL</h4>
                 
                             <ul>
                                 <li>✔ Visites techniques régulières toute l’année</li>
@@ -378,7 +381,8 @@
                         <img src="images/H3.JPG" alt="">
                 
                         <div class="cartetext">
-                            <h4>FORFAIT OCCASIONNEL ⭐️</h4>
+                            <p style="padding: 8px; background-color: #93C5FD; color: #007bf0; border-radius: 10px; font-size: 10px; display: inline-block;"> FORFAIT OCCASIONNEL</p>
+                            <h4>FORFAIT OCCASIONNEL</h4>
                 
                             <ul>
                                 <li>✔ Intervention ponctuelle sur demande</li>
@@ -398,8 +402,8 @@
                 </div>
 
                 <section class="about" id="ABOUT">
-                    <p class="blue" style="padding-top: 80px; text-align: center;">A propos de nous</p>
-                    <h1 style="padding-top: 4px; text-align: center;">UNE MISSION SIMPLE :
+                    <p class="blue" style="padding-top: 80px;">A propos de nous</p>
+                    <h1 style="padding-top: 4px;">UNE MISSION SIMPLE :
                         COMBLER VOS BESOINS TECH.</h1>
                 
                 
@@ -434,7 +438,7 @@
                 <div class="contact" id="contact">
                     <p class="blue" style="padding-left: 0;">CONTACT</p>
                     <h1>PARLONS DE VOS BESOINS</h1>
-                    <p>Vous souhaitez nous contacter pour plus d'infos ou pour quoi que soit ?</p>
+                    <p>Vous souhaitez nous contacter pour plus d'infos, un devis ou quoi que ce soit ? On vous répond rapidement.</p>
                 
                     <div class="form">
                    <label for="Name">Nom :</label>
