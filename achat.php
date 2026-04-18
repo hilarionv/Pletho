@@ -85,10 +85,10 @@ $produit = $result->fetch_assoc();
     <main>
         <div class="ssss">
             <div class="image-produit">
-            <img src="<?= $produit['image'] ?>" style="width:400px;">
+            <img src="<?= $produit['image'] ?>">
             </div>
     
-            <div class="textt" style="text-align: start; padding-top: 50px; flex: 1">
+            <div class="textt" style="padding-left: 30px;">
                 <div class="details">
                     <h1><?= $produit['nom'] ?></h1>
                     <h3><?= $produit['prix'] ?> FCFA</h3>
@@ -191,6 +191,17 @@ once: true,
 offset: 80,
 
 });
+</script>
+
+<script>
+   document.querySelectorAll(".faq-question").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const item = btn.parentElement;
+
+        item.classList.toggle("active");
+    });
+});
+
 </script>
 </body>
 </html>
