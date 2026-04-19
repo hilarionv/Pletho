@@ -22,7 +22,13 @@ max-width: 100%;
 main {
     padding: 0 15px;
     box-sizing: border-box;
-   
+ 
+}
+
+.pop button {
+    background-color: #007bff;
+    color: white;
+    font-weight: 500;
 }
 
 
@@ -755,7 +761,7 @@ border-radius: 20px;
 
     align-items: flex-start;
 
-    background: #f9fafb;
+    background: white;
 
 }
 
@@ -763,15 +769,15 @@ border-radius: 20px;
 
 .image-produit img {
 
-    width: 350px;
+    min-width: 350px;
 
     height: 400px;
 
-    object-fit: cover;
+    object-fit: contain;
 
     border-radius: 12px;
 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  
 
 }
 
@@ -2238,12 +2244,6 @@ font-weight: 600;
     }
 
 }
-
-
-
-
-
- 
 
 
 
